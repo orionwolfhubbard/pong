@@ -1,0 +1,117 @@
+
+body {
+    background: lightyellow;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    position: absolute;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightblue;
+    border: blue solid 1px;
+    border-radius:  10px;
+}
+
+.react-logo {
+    position: absolute;
+    animation: logo-3d infinite 2s linear;
+    height: 130px;
+    top : -30px;
+    left : -130px;
+
+}
+
+.socket-logo {
+    position: absolute;
+    animation: logo-spin infinite 1.5s reverse;
+    height: 120px;
+    top : 270px;
+    left : 400px;
+
+}
+
+.mongo-logo {
+    animation: logo-grow infinite 1s linear;
+    position: absolute;
+    height: 100px;
+    top : 270px;
+    left : -70px;
+
+}
+
+.node-logo {
+    animation: logo-skew infinite 1s linear;
+    position: absolute;
+    height: 100px;
+    top : -25px;
+    left : 365px;
+}
+
+.pong-title {
+    animation: pong infinite 10s linear;
+}
+
+@keyframes logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes logo-3d {
+    from { transform: rotate3d(0,0,0,360deg); }
+    to { transform: rotate3d(20,50,-20,360deg); }
+}
+
+@keyframes logo-grow {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes logo-skew {
+    0% { transform: skewX(10deg); }
+    25% { transform: skew(-10deg); }
+    50% { transform: skewY(10deg); }
+    75% { transform: skewX(-10deg); }
+    100% { transform: skew(10deg); }
+}
+
+@keyframes pong {
+    0%,100% { top : 10px; left : 10px; }
+    10% { top : 45px; left : 70px; }
+    35% { top : -60px; left : 200px; }
+    45% { top : -30px; left : 250px; }
+    65% { top : 45px; left : 175px; }
+    85% { top : -60px; left : 90px; }
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 323px;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.right {
+    position: absolute;
+    top : -20px;
+    right: 0;
+}
+
+.left {
+    position: absolute;
+    top : -20px;
+    left: 0;
+}
